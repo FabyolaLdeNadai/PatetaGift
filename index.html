@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Caza del Completo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="intro">
+    <h1>Bienvenido a tu regalo de cumpleaños Pateta 🤪🐶 </h1>
+    <p>
+       Hice un jueguito de caza de completos (bien fácil para que lo puedas encontrar con tu cerebrito pequeño)<br><br>
+      ¿Tu objetivo? Encontrar los <strong>4 completos</strong> escondidos en la pantalla del computador (si tienes que encontrarlos es porque están escondidos, ¿cierto? Duh). Cada uno tiene un recuerdo tuyo en Mammoth con personas que fueron parte de tu intercambio!!<br><br><br>
+      - <strong>Ojo1:</strong> todos los videos y fotos en este sitio son privados, así que aunque parezca que están en YouTube, <strong>no son públicos</strong> y solo yo puedo acceder<br><br>
+      - <strong>Ojo2:</strong> Este sitio solo funciona al 100% en PC porque no lo programé para ser accesible desde el celular (eso no significa que no puedas acceder desde el celular, solo que no estará totalmente funcional como debería ser)<br><br><br>
+      - Cuando encuentres todas tus 'memorias' escondidas dentro de los completos, tendrás que encontrar las <strong>5 cartas</strong> que aparecerán en el sitio después de que TODAS, repito, TODAS las memorias sean desbloqueadas<br>
+      (Yaaaa... ni están taaaan escondidas así... pero lo que vale es la intención)<br><br>
+      
+      
+      (con participación especial de Grachi que me ayudó con casi todo 🤣).
+    </p>
+    <button id="startButton">Inicio</button>
+  </div>
+
+  <div id="gameArea">
+    <h1> Caza las memorias del Pateta</h1>
+    <p>Pa' desbloquear las memorias, dale clic con el mouse 🤨</p>
+
+    <div class="hotdog" id="heart0" onclick="reveal(0, this)">🌭</div>
+    <div class="hotdog" id="heart1" onclick="reveal(1, this)">🌭</div>
+    <div class="hotdog" id="heart2" onclick="reveal(2, this)">🌭</div>
+    <div class="hotdog" id="heart3" onclick="reveal(3, this)">🌭</div>
+
+    <div id="mensagem"></div>
+  </div>
+
+  <div id="cardsArea" class="container" style="opacity: 0; visibility: hidden;">
+    <div class="envelope-wrapper envelope-wrapper-1">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Fabri,</strong>
+            <p>Feliz cumpleaños amigo mío, que Dios te bendiga, te acompañe en tu día y en todo lo que venga un abrazo lokillo</p>
+            <strong>- Benja</strong>
+          </div>
+        </div>
+      </div>
+      <div class="heart heart-1"></div>
+    </div>
+  
+    <div class="envelope-wrapper envelope-wrapper-2">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Fabri Pateta, el más insoportable del condado :P</strong>
+            <p>No sé cómo pasó, pero terminaste siendo un amigo muy querido para mí… siendo tan molesto. Siempre aparecías con una talla tonta, un comentario sin sentido o un “ya po, ¿por qué te reís si no dije nada?” y, sin darte cuenta, me hacías sonreír justo cuando más lo necesitaba.
+
+No tienes idea, pero hubo días en los que me sentía sola o algo bajoneada, y llegaba el Fabri con sus comentarios de viejo español diciendo “coño, tío, que he trabajado todo el día” y, puff, mis preocupaciones desaparecían. Eres como un remedio recetado por un médico loco, que funciona sin que nadie entienda el porqué.
+
+Gracias por existir con esa energía tan peculiar, que molesta y acompaña al mismo tiempo. Gracias por todas las risas, por decir tonterías que me hacían olvidar lo malo, y por ser ese tipo de amigo que ni sabe cuánto ayuda.
+
+Te quiero mucho, idiota 🙃. Nunca cambies, porque el mundo necesita más Fabrizzios desubicados pero con un corazón gigante. Y feliz cumpleaños, po, que te llegue mucha torta y ningún completo frío.</p>
+            <strong>------ Bibi</strong>
+          </div>
+        </div>
+      </div>
+      <div class="heart heart-2"></div>
+    </div>
+  
+    <div class="envelope-wrapper envelope-wrapper-3">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Buena malaya caeza de poste,</strong>
+            <p>Esperando que te encuentres muy bien el día de hoy, voy a decirte unas palabras para que te sientas mejor de tu pinche vida culera. Ayia la weona pesa que le decía eso en su cumple, ajajajaj.
+
+              Ya, ahora poniéndome seria: puta que te extraño, mi Fabritzzio Panini. Yo creo que en otra vida fuimos hermanos o no sé que weá, pero puta que es bakán cuando uno encuentra a alguien con el mismo humor de uno y con buenos valores, que te comprenda y que ha tenido una experiencia de vida intensa igual que uno.
+              
+              Eres una persona muy importante para mí, porque en momentos malos fuiste una compañía fundamental. Te juro que cuando aparecías era como un alivio a esos días de mierda que hubo en Mammoth.
+              Llegar a la casa y tener a una persona hablando en español de España era un meme, aunque me dijeras puras cosas malas como: “me importa una mierda cómo haya estado tu día, coño, que vengo de currar todo el día como el puto negro que soy.”
+              Te juro que escuchar esa estupidez era increíble, o los días que me decíai que me callara con tu tono de enfermito mental, sin importar el contexto que hubiera detrás de lo que te quería contar. 
+              Esas cosas, te juro, fueron de las que más me acuerdo de Mammoth. Espero que sigas hablando así, porque si no, qué fome, ajajajaj.
+              
+              Bueno, y decirte que aunque me faltó conocerte más en profundidad, porque el muy lindo le gusta hacerse el misterioso, siento que eres una persona súper sensible y con un corazón súper sano. No sé cómo explicar eso, pero hay veces que la gente tiene un corazón podrido, y que por más que intenten hacer cosas buenas, se siente que el trasfondo de lo que hacen es falso o forzado. Y yo, que soy una sensible de mierda, pude sentir que tu cariño con los que te rodean es genuino.
+              Se nota también que eres un muy buen hijo y hermano. Eso lo pude notar en cómo tu familia te hablaba cuando estabas en llamada con ellos, y por más que hayan algunos momentos difíciles en la familia, doy fe del amor que hay en la tuya.
+              Sé que vas a seguir siendo un misterioso con tus problemas, pero de verdad quiero que sepas que, con todo el cariño de mi corazón, voy a estar para ti. 
+              Si algún día necesitas hablar para desahogarte, cuenta conmigo. Y si algún día necesitas un consejo, también cuenta conmigo, aunque no sean tan buenos consejos, ajajajaja.
+              
+              Te quiero mucho, coñiooo. Ojalá sea un día muy lindo para ti, porque te lo mereces, mi xan.
+              Dale con todo pa’ delante y sigue siendo tú, que nadie te quite esa sonrisa que tienes, que tanto alegra a todos. Un abrazo.
+              
+              </p>
+            <strong>    Atte: la grashile           (pa’ los vios)</strong>
+            <br><br>
+            <strong></strong>
+          </div>
+        </div>
+      </div>
+      <div class="heart heart-3"></div>
+    </div>
+  
+    <div class="envelope-wrapper envelope-wrapper-4 bottom-row">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Querido Carlofelipe, Rayo, Chalán, Fabri:</strong>
+            <p> Acá va un pequeño saludo de mi parte para ti mi buen chalán, queria desearte un muyyyy feliz cumpleaños hmno, que sea un tremendo cumpleaños en todo sentido, tu sabes que deseo lo mejor para ti en todo ambito de la vida y estoy seguro que eres capaz de cualquier cosa que quieras o te propongas. Decirte que estoy tremendamente agradecido de haberme topado con alguien como tú en la vida y en una experiencia como la que tuvimos, ojalá todos tuvieran la oportunidad de conocer a alguien como tú hmno, una persona buena y bacan de verdad, te quiero muchísimo y que siempre sepas que puedes contar conmigo para lo que sea, en buenas y malas aún más. Te mando un abrazo gigante y nos estamos viendo en breve mi compadre manchissss.⚡⚡⚡</p>
+            <strong>---- Gabriel</strong>
+          </div>
+        </div>
+      </div>
+      <div class="heart heart-4"></div>
+    </div>
+  
+    <div class="envelope-wrapper envelope-wrapper-5 bottom-row">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Hermanito mío,</strong>
+            <p>Te mando un muy feliz cumpleaños! Que lo
+Pases leyenda mi rey te mando un abrazo gigante maneee , nos vemos para el partido de chilito mi bro ajaja para que estés aguas ajaja saludos mi bro puro éxito</p>
+            <strong>---- Pancho</strong>
+          </div>
+        </div>
+      </div>
+      <div class="heart heart-5"></div>
+    </div>
+     <div class="envelope-wrapper envelope-wrapper-6 bottom-row">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Feliz cumple Fabri!</strong>
+            <p>Espero que sea un día muy especial, estoy muy agradecida de haberte conocido!!! Hiciste que la temporada fuera pa cagarse de la risa todos los días. 
+Eres una persona con un corazón muy lindo y con muchísimo que ofrecer, y estoy segura de que vas a llegar muy lejos en todo lo que te propongas, que te siga importando una polla lo que piensen de ti y tus guarradas.
+Gracias por tu buena onda, por tu humor y por compartir tu energía tan bacán con todos nosotros aña
+Nunca olvidaré cuando me salvaste del desmayo en la cocina...
+Te deseo lo mejor hoy y siempre, y que este nuevo año de vida venga cargado de muchisimas cosas buenas.
+ 
+Un abrazo gigante,</p>
+            <strong>---- Fer</strong>
+          </div>
+        </div>
+      </div>
+      <div class="heart heart-6"></div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div id="videoModal" class="modal" style="display: none; justify-content: center; align-items: center; background: rgba(0,0,0,0.8); position: fixed; top: 0; left: 0; width: 100%; height: 100%;">
+    <div class="modal-content" style="position: relative; max-width: 90%; width: 640px;">
+      <span onclick="closeModal()" class="close" style="position: absolute; top: 10px; right: 20px; font-size: 30px; cursor: pointer; color: white;">&times;</span>
+      <div id="modalVideoContainer" style="width: 100%; height: 360px;"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.querySelectorAll('.envelope-wrapper').forEach(wrapper => {
+            wrapper.addEventListener('click', () => {
+                wrapper.classList.toggle('flap');
+            });
+        });
+    function toggleCard(el) {
+      el.classList.toggle('flap');
+    }
+  </script>
+</body>
+</html>
